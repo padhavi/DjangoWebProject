@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ad</title>
+</head>
+<body>
+<p> the current user logged in is : {{ user }}</p>
+                {% for p in crop_ad %}
+                <p>User:{{ p.user }}</p>
+                <ol>retailer:{{ p.retailer_details }}</ol>
+                <ol>Crops :{{ p.crop_details }}</ol>
+
+                <ol>qty required:{{ p.qty_details }}</ol>
+                <ol>status update: {{ p.status_update }}</ol>
+
+                {% endfor %}
+
+</body>
+</html>

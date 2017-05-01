@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="{% static 'homepage/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'homepage/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+     <link href="{% static 'homepage/style.css' %}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+
+{% block body %}
+
+
+
+
+
+
+<body id="myPage"  data-spy="scroll" data-target=".navbar" data-offset="60" >
+<div class="topnav">
+  <a class="active" href="{% url 'crop_ad_details' %}">Crop_Ad</a>
+  <a  href="{% url 'sell_crop' %}">Sell Crop</a>
+  <a  href="{% url 'Checkcomplain' %}">File Complain</a>
+  <a href="/contact ">Contact Us</a>
+  <a id= "about" href="/about">About Us</a>
+  <a href="{% url 'farmerlogoutt' %}">Logout</a>
+ </div>
+ <div style="padding-right: 18px"></div>
+    <br>
+<p> the current user logged in is : {{ user }}</p>
+
+{% endblock %}
+</body>
+</html>
+
+
+
+

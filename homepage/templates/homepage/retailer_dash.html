@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block body %}
+
+<a href="{% url 'post_advertisement' %}">POST ADs</a>
+<a href="{% url 'CheckcomplainRetailer' %}">complain file</a>
+<a href="{% url 'farmer_ads' %}">Farmer_ad_details</a>
+    {#    <a href="{% url 'Farmer_Details' %}">Farmer Details</a>#}
+<br>
+<p> the current user logged in is : {{ user }}</p>
+
+                    <a href="{% url 'retailerlogoutt' %}">Logout
+                    </a>
+{% endblock %}
+</html>

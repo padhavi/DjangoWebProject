@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="panel-body">
+                    <a href="{% url 'viewcomplainretailer' %}"></a>
+            {% for p in retcom %}
+            <p>User:{{ p.user }}</p>
+            <ol>Complain :{{ p.complain }}</ol>
+            <ol>Status:{{ p.status_update }}</ol>
+
+            {% endfor %}
+                </div>
+</body>
+</html>

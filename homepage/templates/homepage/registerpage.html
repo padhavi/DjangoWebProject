@@ -1,0 +1,81 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<title>register</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .w3-card-4{
+        background-color: #000000;
+        width: 350px;
+        height: 400px;
+        float:left;
+        margin-left: 100px;
+        position: relative;
+        margin-top: 200px;
+    }
+.w3-button{
+    width: 30%;
+    height: 100%;
+    font-weight:500;
+    margin-top: 20px;
+    text-transform:uppercase;
+    color:#fff;
+    background-color: #FF4081;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin-left: 50px;
+}
+    .card-img-top{
+        margin-left: 100px;
+        height: 50%;
+        margin-top: 10%;
+    }
+    .card-title{
+        text-align: center;
+        font-family: "Aparajita";
+        font-size: xx-large;
+        color: white;
+    }
+
+</style>
+<body>
+
+
+<div class="w3-card-4" >
+     <h4 class="card-title">CUSTOMER Login</h4>
+  <img class="card-img-top" src="{% static "homepage/images/farmerlogin.jpg" %}" alt="Avatar" style="width:40% " alt="Card image cap">
+  <div class="card-block">
+
+
+  <button onclick="window.location.href='retailer_login'" type="button" type="button" class="btn w3-button">Login</button>
+         <button onclick="window.location.href='retailer_register'" type="button" type="button" class="btn w3-button">Sign Up</button>
+
+  </div>
+</div>
+<div class="w3-card-4" >
+     <h4 class="card-title">Admin Login</h4>
+  <img class="card-img-top" src="{% static "homepage/images/farmerlogin.jpg" %}" alt="Avatar" style="width:40% " alt="Card image cap">
+  <div class="card-block">
+
+
+    <button onclick="window.location.href='login'" type="button" type="button" class="btn w3-button">Login</button>
+         <button onclick="window.location.href='regiter'" type="button" type="button"  class="btn w3-button">Sign Up</button>
+  </div>
+</div>
+
+<div class="w3-card-4" >
+     <h4 class="card-title">Farmer Login</h4>
+  <img class="card-img-top" src="{% static "homepage/images/farmerlogin.jpg" %}" alt="Avatar" style="width:40% "  alt="Card image cap">
+  <div class="card-block">
+
+   {% comment %} <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>{% endcomment %}
+       <button onclick="window.location.href='farmer_login'" type="button" type="button" class="btn w3-button">Login</button>
+         <button onclick="window.location.href='farmer_register'" type="button" class="btn w3-button">Sign Up</button>
+
+
+  </div>
+</div>
+
+</body>
+
+</html>

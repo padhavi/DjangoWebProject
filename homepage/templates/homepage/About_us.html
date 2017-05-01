@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link href="{% static "homepage/style.css" %}" rel="stylesheet">
+    <style>
+        .aboutvideo{
+            margin-left: 30%;
+            margin-top: 5%;
+
+        }
+    </style>
+</head>
+
+<body id="myPage"  data-spy="scroll" data-target=".navbar" data-offset="60" >
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a  href="/News">News</a>
+  <a  href="/RegisterUser">Register</a>
+  <a href="/Contact">Contact Us</a>
+  <a  class="active" id= "about" href="/About_us">About Us</a>
+ </div>
+ <div style="padding-right: 18px"></div>
+<br>
+  <iframe class="aboutvideo" width="520" height="445" src="https://www.youtube.com/embed/JdGd4YBN1CE">
+</iframe>
+
+</body>
+</html>
+
+
+
+
+

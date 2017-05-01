@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>complain</title>
+</head>
+<body>
+
+<p>tell us your complains - farmers</p>
+
+<div align = "center">
+    <tr>
+
+        <form method = "POST">
+
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <input type="submit" value="submit">
+
+        </form>
+
+
+
+
+
+
+    </tr>
+</div>
+
+</body>
+</html>
